@@ -1,0 +1,10 @@
+node_modules/
+**/node_modules/
+dist/
+.env
+*.log
+# 健保藥品原始檔（96MB）— 由 build-index.mjs 從官方 API 下載後產生
+packages/nhi-data/data/nhi_drug_full.csv
+# 中間產物
+docs/*.pdf
+docs/gen/

@@ -1,0 +1,6 @@
+{
+  "name": "@tw-smart/smart-client",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": { "./smart": "./src/smart.js", "./fhir": "./src/fhir.js" }
+}

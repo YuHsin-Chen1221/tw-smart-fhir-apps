@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>台灣血脂 CDS · SMART on FHIR</title>
+</head>
+<body>
+  <div class="app">
+    <aside class="side">
+      <div class="brand">
+        <div class="brand-mark">脂</div>
+        <div>
+          <div class="brand-name">台灣血脂 CDS</div>
+          <div class="brand-sub">SMART on FHIR</div>
+        </div>
+      </div>
+      <a class="nav-item on" href="#/overview">血脂評估 <span class="tag">CDS</span></a>
+      <a class="nav-item" href="#/labs">檢驗趨勢</a>
+      <a class="nav-item" href="#/meds">用藥與健保</a>
+      <a class="nav-item" href="#/source">資料來源</a>
+      <div style="margin-top:auto">
+        <div id="conn" class="pill" style="width:100%;justify-content:center">連線中…</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <input id="q" class="input" placeholder="搜尋病人姓名…" style="flex:1;max-width:320px" />
+        <select id="picker" class="input" style="min-width:220px"></select>
+        <button id="reload" class="btn" title="重新查詢">↻</button>
+        <div style="flex:1"></div>
+        <span id="src" class="src-badge"><span class="dot"></span>尚未連線</span>
+      </div>
+      <div id="view" class="view"></div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

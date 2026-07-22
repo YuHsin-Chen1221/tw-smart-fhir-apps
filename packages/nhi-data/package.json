@@ -1,0 +1,8 @@
+{
+  "name": "@tw-smart/nhi-data",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "scripts": { "build-index": "node src/build-index.mjs" }
+}

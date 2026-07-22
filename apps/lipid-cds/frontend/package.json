@@ -1,0 +1,8 @@
+{
+  "name": "@tw-app/lipid-cds-frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": { "dev": "vite --port 5301", "build": "vite build", "preview": "vite preview --port 5301" },
+  "dependencies": { "echarts": "^5.5.1" },
+  "devDependencies": { "vite": "^6.0.7" }
+}

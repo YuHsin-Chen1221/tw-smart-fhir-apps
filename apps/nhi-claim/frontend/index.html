@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>健保智慧申報 · SMART on FHIR</title>
+</head>
+<body>
+  <div class="app">
+    <aside class="side">
+      <div class="brand">
+        <div class="brand-mark">報</div>
+        <div>
+          <div class="brand-name">健保智慧申報</div>
+          <div class="brand-sub">SMART on FHIR</div>
+        </div>
+      </div>
+      <a class="nav-item on" href="#/convert">申報轉換 <span class="tag">核心</span></a>
+      <a class="nav-item" href="#/claim">FHIR Claim</a>
+      <a class="nav-item" href="#/source">資料來源</a>
+      <div style="margin-top:auto">
+        <div id="conn" class="pill" style="width:100%;justify-content:center">連線中…</div>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <input id="q" class="input" placeholder="搜尋病人姓名…" style="flex:1;max-width:300px" />
+        <select id="picker" class="input" style="min-width:210px"></select>
+        <label class="row-sub" style="display:flex;align-items:center;gap:6px">療程
+          <input id="days" class="input" type="number" value="28" min="1" max="90" style="width:74px" />天</label>
+        <button id="reload" class="btn">↻</button>
+        <div style="flex:1"></div>
+        <span id="src" class="src-badge"><span class="dot"></span>尚未連線</span>
+      </div>
+      <div id="view" class="view"></div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
