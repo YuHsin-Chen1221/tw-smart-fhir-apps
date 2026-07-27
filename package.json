@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build-nhi-index": "node packages/nhi-data/src/build-index.mjs",
+    "build-index": "node packages/nhi-data/src/build-index.mjs",
     "seed": "node packages/smart-client/src/seed-conditions.mjs",
     "dev:lipid": "npm --workspace @tw-app/lipid-cds-backend run dev",
     "dev:claim": "npm --workspace @tw-app/nhi-claim-backend run dev"
