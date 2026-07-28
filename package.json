@@ -11,10 +11,13 @@
     "build-nhi-index": "node packages/nhi-data/src/build-index.mjs",
     "build-index": "node packages/nhi-data/src/build-index.mjs",
     "seed": "node packages/smart-client/src/seed-conditions.mjs",
-    "dev:lipid": "npm --workspace @tw-app/lipid-cds-backend run dev",
-    "dev:claim": "npm --workspace @tw-app/nhi-claim-backend run dev"
+    "dev:lipid": "concurrently -n api,web -c cyan,magenta \"npm --workspace @tw-app/lipid-cds-backend run dev\" \"npm --workspace @tw-app/lipid-cds-frontend run dev\"",
+    "dev:claim": "concurrently -n api,web -c cyan,magenta \"npm --workspace @tw-app/nhi-claim-backend run dev\" \"npm --workspace @tw-app/nhi-claim-frontend run dev\"",
+    "dev:lipid:backend": "npm --workspace @tw-app/lipid-cds-backend run dev",
+    "dev:claim:backend": "npm --workspace @tw-app/nhi-claim-backend run dev"
   },
   "devDependencies": {
+    "concurrently": "^9.1.0",
     "playwright": "^1.61.1"
   }
 }

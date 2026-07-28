@@ -17,8 +17,17 @@
 ```bash
 npm install
 npm run build-nhi-index   # 首次需下載健保藥品檔（見 packages/nhi-data/data/README.md）
-npm run dev:lipid         # 或 npm run dev:claim
 ```
+
+**啟動 App（一條指令同時起前後端）：**
+```bash
+npm run dev:lipid    # 血脂 CDS  → 前端 http://localhost:5301
+npm run dev:claim    # 智慧申報  → 前端 http://localhost:5302
+```
+啟動後在瀏覽器打開對應的**前端**網址（5301 / 5302）。
+後端（8801 / 8802）為 API，不需直接開啟。
+
+> 若只想單獨起後端：`npm run dev:lipid:backend` / `npm run dev:claim:backend`
 
 ## 資料來源
 - 健保用藥品項查詢項目檔（政府資料開放平臺 dataset 23715，政府資料開放授權條款）
